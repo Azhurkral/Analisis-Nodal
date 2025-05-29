@@ -2,7 +2,5 @@ streamlit
 matplotlib
 numpy
 pandas
-fluidproperties
-BeggsandBrill
 scipy
 openpyxl
