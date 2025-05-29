@@ -4,3 +4,5 @@ numpy
 pandas
 fluidproperties
 BeggsandBrill
+scipy
+openpyxl
