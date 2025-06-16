@@ -150,8 +150,8 @@ col1, col2, col3 = st.columns([1, 1, 2])
 with col1:
     st.subheader("Parámetros de Reservorio (IPR)")
     pr = st.number_input("Presión del reservorio (psi)", 500.0, 10000.0, 2000.0, 50.0)
-    pb = st.number_input("Presión de burbuja (psi)", 500.0, pr, 1500.0, 50.0)
-    ptest = st.number_input("Presión de prueba (psi)", 100.0, pr, 1500.0, 50.0)
+    pb = st.number_input("Presión de burbuja (psi)", 500.0, 3000, 1500.0, 50.0)
+    ptest = st.number_input("Presión de prueba (psi)", 100.0, 3000, 1500.0, 50.0)
     qtest = st.number_input("Caudal de prueba (m3/d)", 1.0, 2000.0, 100.0, 10.0)
     wcut = st.number_input("Corte de agua IPR (%)", 0.0, 100.0, 90.0, 1.0, key="wcut_ipr") / 100
 
@@ -159,7 +159,7 @@ with col2:
     st.subheader("Parámetros del Pozo (VLP)")
     q_total = st.number_input("Caudal de líquido bruto (m3/d)", 1.0, 500.0, 33.0)
     wcut_vlp = st.number_input("Corte de agua VLP (%)", 0.0, 100.0, 90.0, 1.0, key="wcut_vlp") / 100
-    GOR = st.number_input("Razón gas/petróleo (m3/m3)", 0.0, 1000.0, 200.0)
+    GOR = st.number_input("Razón gas/petróleo (m3/m3)", 0.0, 10000.0, 200.0)
     gas_grav = st.number_input("Gravedad específica del gas", 0.0, 2.0, 0.65)
     oil_grav = st.number_input("API del petróleo", 5.0, 50.0, 35.0)
     wtr_grav = st.number_input("Gravedad específica del agua", 0.0, 2.0, 1.07)
